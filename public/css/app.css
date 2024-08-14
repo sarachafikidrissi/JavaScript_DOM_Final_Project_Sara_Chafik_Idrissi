@@ -49738,6 +49738,12 @@ nav {
   background-color: white;
   width: 100%;
   z-index: 9999;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav h1, nav .h1 {
+  font-weight: bolder;
 }
 nav a {
   text-decoration: none;
@@ -49762,6 +49768,10 @@ nav .after-a:hover:after {
 nav .menu-icon {
   color: #7f7f90;
 }
+nav .btn-menu {
+  display: flex;
+  gap: 10px;
+}
 nav .bi-dot {
   position: absolute;
   top: 10px;
@@ -49776,6 +49786,9 @@ nav .book-btn {
 }
 nav .book-btn:hover {
   background-color: hsla(0, 84%, 44%, 0.9);
+}
+nav #close {
+  display: none;
 }
 
 #dropdown-list {
@@ -49864,6 +49877,35 @@ nav .book-btn:hover {
   font-size: 20px;
 }
 
+@media (max-width: 425px) {
+  .navigation {
+    display: none;
+  }
+  nav {
+    justify-content: space-between;
+    padding-inline: 2vw;
+  }
+  .navigation ul {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 100%;
+    padding-top: 2vh;
+    padding-left: 4vw;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px gray;
+    height: 80vh;
+  }
+  nav .after-a:after {
+    content: none;
+  }
+  a {
+    font-weight: bold;
+  }
+}
 * {
   margin: 0;
   padding: 0;
