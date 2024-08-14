@@ -49731,6 +49731,77 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  font-family: amantic;
+  src: url("../../../../public/Fonts/Amatic_SC/AmaticSC-Bold.ttf");
+}
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+}
+.hero-section .title {
+  font-family: amantic;
+  font-size: 64px;
+  color: #37373f;
+  padding: 0 30vw 0 0;
+}
+.hero-section p {
+  color: #606264;
+  font-size: 20px;
+}
+.hero-section .book-btn {
+  padding: 1.5vh 4vh;
+  border: none;
+  background-color: #ce1212;
+  color: white;
+  border-radius: 25px;
+}
+.hero-section .book-btn:hover {
+  background-color: hsla(0, 84%, 44%, 0.9);
+}
+.hero-section .buttons {
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+}
+.hero-section a {
+  color: #212529;
+  font-weight: 600;
+}
+.hero-section a:hover {
+  color: #ce1212;
+  cursor: pointer;
+}
+.hero-section a:before {
+  content: "";
+  margin-right: 10px;
+  background: url("../../../../public/images/play.svg") no-repeat;
+  background-size: contain;
+  height: 30px;
+  width: 30px;
+  float: left;
+}
+.hero-section .hero-section-image {
+  animation: bounce 3s infinite linear;
+  position: relative;
+}
+.hero-section .hero-section-image img {
+  width: 90%;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-2vh);
+  }
+  50% {
+    transform: translateY(2vh);
+  }
+  100% {
+    transform: translateY(-2vh);
+  }
+}
+
 nav {
   font-family: "Inter", sans-serif;
   position: fixed;
