@@ -1,0 +1,132 @@
+nav{
+    font-family: "Inter",  sans-serif;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 9999;
+    a{
+        text-decoration: none;
+        color: $nav-color;
+        
+    }
+    .after-a{
+        position: relative;
+    }
+    .after-a:after{
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0px;
+        background-color: red;
+        height: 2px;
+        width: 0;
+        transition: 0.3s;
+    }
+    .after-a:hover:after{
+        width: 100%;
+    }
+    .menu-icon{
+        color: $nav-color
+    }
+    .bi-dot{
+        position: absolute;
+        top: 10px;
+        left: 90%;
+    }
+    .book-btn{
+        padding: 1vh 3vh;
+        border: none;
+        background-color: #ce1212;
+        color: white;
+        border-radius: 20px;
+    }
+    .book-btn:hover{
+        background-color: hsla(0, 84%, 44%, 0.9);
+    }
+}
+
+#dropdown-list{
+    display: none;
+    cursor: pointer;
+}
+
+#menu-list:hover #dropdown-list{
+    display: block;
+    background-color: white;
+    border: none;
+    box-shadow: 2px 2px 4px gray;
+
+}
+
+.dropdown-item{
+    color: gray;
+}
+.dropdown-item:hover{
+    color: #ce1212;
+}
+.loginContent{
+    display: none;
+}
+.backdrop{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.389);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.login-input{
+    background-color: white;
+    border-radius: 20px;
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        width: 100%;
+        align-items: center;
+        .input{
+            padding: 2vh 1vw;
+            width: 80%;
+        }
+    }
+    .signIn{
+        padding: 1vh 3vh;
+        border: none;
+        background-color: #ce1212;
+        color: white;
+        border-radius: 20px;
+    }
+    span{
+        color: #ce1212;
+    }
+    .title{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        h1{
+            font-family: $defualt-font;
+        }
+    }
+    .close{
+        position: absolute;
+        top:10%;
+        right: 5%;
+        border: none;
+        background-color: transparent;
+        font-size: 20px;
+    }
+}
+
+

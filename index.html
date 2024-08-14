@@ -7,7 +7,83 @@
   <link rel="stylesheet" href="./public/css/app.css">
 </head>
 <body>
+<!-- Navbar -->
+<nav
+id="home"
+class="d-flex justify-content-evenly align-items-center py-3"
+>
+<div class="logo position-relative">
+  <h1>
+    Yummy<span class="text-nav-hover-color"
+      ><i class="bi bi-dot fw-lighter"></i
+    ></span>
+  </h1>
+</div>
+<div class="navigation">
+  <ul class="list-unstyled d-flex gap-5 m-0">
+    <li class="after-a"><a href="#">Home</a></li>
+    <li class="after-a"><a href="#about">About</a></li>
+    <li class="after-a"><a href="#menu">Menu</a></li>
+    <li class="after-a"><a href="#events">Events</a></li>
+    <li class="after-a"><a href="#chefs">Chefs</a></li>
+    <li class="after-a"><a href="#gallery">Gallery</a></li>
+    <li class="after-a" id="menu-list">
+      <a
+        class="nav-link dropdown-toggle text-nav-color"
+        href="#"
+        id="navbarDarkDropdownMenuLink"
+        role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Dropdown
+      </a>
+      <ul
+        class="dropdown-menu dropdown-menu-dark"
+        aria-labelledby="navbarDarkDropdownMenuLink"
+        id="dropdown-list"
+      >
+        <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+        <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+        <li><a class="dropdown-item" href="#">Dropdown</a></li>
+      </ul>
+    </li>
+    <li class="after-a"><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+<div>
+  <!-- Trigger the modal with a button -->
+  <button class="book-btn" modal-trigger="myLogin">Login</button>
+    <!-- Modal -->
+  <div class="loginContent backdrop" id="myLogin">
+    <!-- Modal Content -->
+      <div class="login-input">
+        <div class="title">
+          <h1>Login</h1>
+          <button class="close"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div class="inputs">
+          <input class="input" type="text" placeholder="Email">
+          <input class="input" type="password" placeholder="Password">
+          <div class="checks">
+
+            <input type="checkbox" id="check">
+            <label for="check">Show Password</label>
+          </div>
+        </div>
+        <button class="signIn">Sign In</button>
+        <div class="forgot">
+          <p class="m-0">Forgot <span>Username/Password?</span></p>
+          <p class="m-0">Don't have an ccount? <span>Sign Up</span></p>
+        </div>
+      </div>
+  </div>
+
+  <!-- <div class="menu-icon fs-1 d-none"><i class="bi bi-list"></i></div> -->
+</div>
+</nav>
 
   <script src="./public/js/app.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
