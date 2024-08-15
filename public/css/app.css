@@ -50427,5 +50427,45 @@ li {
   justify-content: center;
   gap: 2vw;
 }
+.chefs .card {
+  position: relative;
+  transition: transform 0.2s;
+}
+.chefs .card:hover {
+  transform: scale(1.1);
+}
+.chefs .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chefs .card-body .name {
+  font-weight: 900;
+}
+.chefs .card-body .job {
+  color: #909294;
+}
+.chefs .card-text {
+  text-align: center;
+  color: gray;
+}
+.chefs .shape {
+  position: absolute;
+  top: 60%;
+}
+
+@media (max-width: 425px) {
+  .heading {
+    width: 100%;
+  }
+  .chefCards {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .card {
+    width: 90% !important;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
