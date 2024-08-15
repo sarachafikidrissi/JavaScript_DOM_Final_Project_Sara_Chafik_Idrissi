@@ -10,7 +10,7 @@
 <!-- Navbar -->
 <nav
 id="home"
-class=" py-3"
+class=""
 >
 <div class="logo position-relative">
   <h1>
@@ -86,19 +86,42 @@ class=" py-3"
 
 
 <!-- Hero Section -->
-<section class="hero-section py-lg-10 ps-lg-10 mt-lg-10">
+<section class="hero-section py-lg-10  ps-lg-10 mt-lg-10">
   <div class="her-section-content">
     <h1 class="title">Enjoy Your Healthy Delicious Food</h1>
     <p>We are team of talented designers making websites with Bootstrap</p>
     <div class="buttons">
       <button class="book-btn">Book a table</button>
-      <a href="#">Watch Video</a>
+      <a href="#" id="playVideo">Watch Video</a>
+      <div class="video-section backdrop2">
+            <!-- <img src="./public/images/events-4.jpg" alt=""> -->
+            <div id="carousel1" class="carousel-container">
+
+              <div class="carousel">
+      
+                  <div class="slide">
+                      <img src="./public/images/menu/menu-item-1.png" alt="">
+                  </div>
+      
+                  <div class="slide">
+                      <img src="./public/images/menu/menu-item-2.png" alt="">
+                  </div>
+              </div>
+            </div>
+            <button carouselBtn="carousel1" class="previous"><i class="bi bi-chevron-left"></i></button>
+            <button carouselBtn="carousel1" class="next"><i class="bi bi-chevron-right"></i></button>
+            <div class="video-close fs-1"><i class="bi bi-x"></i></div>
+
+      </div>
     </div>
   </div>
   <div class="hero-section-image">
-    <img src="./public/images/hero-img.png" alt="" />
+    <img class="test" src="./public/images/hero-img.png" alt="" />
   </div>
 </section>
+
+
+
 
 
 

@@ -49801,7 +49801,74 @@ textarea.form-control-lg {
     transform: translateY(-2vh);
   }
 }
+.hero-section .backdrop2 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.543);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  z-index: 999;
+}
+.hero-section .backdrop2 img {
+  width: 50vw;
+}
+.hero-section .backdrop2 .video-close {
+  position: absolute;
+  top: 15vh;
+  right: 0vh;
+}
+.hero-section .carousel-container {
+  width: 40vw;
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
+.hero-section .carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.hero-section .slide {
+  min-width: 100%;
+}
+.hero-section .slide img {
+  width: 80%;
+  height: 100%;
+}
+.hero-section .next, .hero-section .previous {
+  padding: 1vh 2vw;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hero-section .next {
+  right: 10px;
+}
+.hero-section .previous {
+  left: 10px;
+}
 
+@media (max-width: 425px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2vh;
+    padding-left: 5vw;
+  }
+  .hero-section .title {
+    font-size: 30px;
+    width: 80%;
+  }
+  .hero-section .hero-section-image {
+    padding-top: 20vh;
+  }
+}
 nav {
   font-family: "Inter", sans-serif;
   position: fixed;
@@ -49812,6 +49879,8 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
 }
 nav h1, nav .h1 {
   font-weight: bolder;
@@ -49955,6 +50024,8 @@ nav #close {
   nav {
     justify-content: space-between;
     padding-inline: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
   }
   .navigation ul {
     display: flex;

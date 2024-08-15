@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: $light-background-color;
+    // padding: 1;
     
 
     .title{
@@ -66,4 +67,106 @@
         100% {transform: translateY(-2vh);}
     }
 
+    .backdrop2{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.543);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 999;
+    img{
+        width: 50vw;
+    }
+    .video-close{
+        position: absolute;
+        top: 15vh;
+        right: 0vh;
+    }
+}
+
+
+    .carousel-container {
+        width: 40vw;
+        height: 60vh;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .carousel {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    
+    
+    .slide {
+        min-width: 100%;
+    }
+    
+    .slide img {
+        width: 80%;
+        height: 100%;
+    }
+    
+    .next , .previous {
+        padding: 1vh 2vw;
+        border-radius: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        // background-color: transparent;
+        // border: none;
+        // font-size: 30px;
+    }
+  
+    
+    .next{
+        right:10px ;
+    }
+    .previous{
+        left:10px ;
+    }
+    
+    // .indicators-grp{
+    //     width: 100%;
+    //     padding: 2vh 0;
+    //     position: absolute;
+    //     bottom: 10%;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     gap: 10px;
+    // }
+    // .indicator{
+    //     padding: 0.3vh 1vw;
+    //     background: rgb(0, 0, 0);
+    //     border-radius: 10px;
+    // }
+    // .activeIndicator{
+    //     background-color: aliceblue;
+    // }
+
+}
+
+@media (max-width: 425px){
+    .hero-section{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2vh;
+        padding-left: 5vw;
+        .title{
+            font-size: 30px;
+            width: 80%;
+        }
+        .hero-section-image{
+            padding-top: 20vh;
+        }
+    }
+    
+    
 }
