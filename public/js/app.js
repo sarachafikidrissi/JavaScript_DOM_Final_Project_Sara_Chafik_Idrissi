@@ -185,3 +185,26 @@ allMenuBtn.forEach(btn => {
         
     })
 })
+//* Testimonial carousel
+let indicators = document.querySelectorAll(".indicatore")
+let slides = document.querySelectorAll(".slide")
+
+
+
+
+indicators.forEach(ind => {
+  ind.addEventListener("click", () => {
+    ind.classList.add("indicatorActive")
+    let attr = ind.getAttribute("data-target")
+    slides.forEach(e => {
+        e.classList.remove("active")
+        let slideId = e.id
+        if(slideId == attr){
+            e.classList.add("active")
+        }
+    })
+    
+  })
+})
+
+

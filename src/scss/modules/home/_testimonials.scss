@@ -1,0 +1,78 @@
+.testimonials{
+    background-color: $light-background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-size: 13px;
+    }
+    .heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .heading p{
+        font-family: $heading-font;
+        font-size: 48px;
+    }
+
+    .slide img{
+        width: 100px !important;
+        height: 100px !important;
+        border-radius: 50%;
+    }
+    
+    .carousel{
+        display: flex;
+        justify-content: center; 
+    }
+    .slide{
+        display: flex;
+        gap: 5vw;
+        border-left: 5px solid #ce1212;
+        width: 70%;
+        padding: 2vh 3vw 0;
+        // display: none;
+        min-width: 70%;
+        position: relative;
+        // left: 110%;
+        // overflow: hidden;
+    }
+    .stars .bi{
+        color: #ffc107;
+    }
+    .name, .job{
+        font-family: $heading-font;
+    }
+    .name{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .job{
+        color: $cold-gray;
+    }
+
+    .active{
+        display: flex;
+
+
+    }
+    .indicators{
+        display: flex;
+        gap: 1vw;
+    }
+    .indicatore{
+        width: 20px;
+        height: 20px;
+        background-color: gray;
+        border-radius: 20px;
+    }
+    .indicatorActive{
+        background-color: #ce1212;
+    }
+    
+}
+
+
+
+
