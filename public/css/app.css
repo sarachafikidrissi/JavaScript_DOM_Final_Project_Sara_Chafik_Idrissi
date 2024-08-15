@@ -50467,5 +50467,66 @@ li {
     width: 90% !important;
   }
 }
+.booking {
+  background-color: #f2f2f2;
+}
+.booking h2, .booking .h2 {
+  font-size: 13px;
+}
+.booking .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.booking .heading p {
+  font-family: amantic;
+  font-size: 48px;
+}
+.booking .content {
+  display: flex;
+  gap: 2vw;
+}
+.booking .content .form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+.booking .content img {
+  width: 25vw;
+}
+.booking input {
+  width: 20vw;
+  padding: 1vh 2vh;
+  outline: none;
+}
+.booking input:focus {
+  border: 2px solid #ce1212;
+}
+.booking .message-input textarea {
+  width: 100%;
+  padding: 2vh;
+}
+.booking .book-btn {
+  padding: 2vh 5vh;
+  border: none;
+  background-color: #ce1212;
+  color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 425px) {
+  .booking {
+    padding: 2vh 4vw !important;
+  }
+  .content {
+    flex-direction: column;
+    width: 100vh;
+    background-color: #ce1212;
+  }
+  .content .top-input {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
