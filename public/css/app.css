@@ -50061,6 +50061,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 .about-section h2, .about-section .h2 {
   font-size: 13px;
 }
@@ -50260,6 +50264,84 @@ a {
   .stats {
     flex-direction: column;
     height: 100vh;
+  }
+}
+.menu h2, .menu .h2 {
+  font-size: 13px;
+}
+.menu .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu .heading p {
+  font-family: amantic;
+  font-size: 48px;
+}
+.menu .time {
+  position: relative;
+}
+.menu .time:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: -5px;
+  width: 110%;
+  text-align: center;
+  height: 2px;
+  background-color: #7f7f90;
+}
+.menu .time:hover:after {
+  background-color: #ce1212;
+}
+.menu .active .time:after {
+  background-color: #ce1212;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu .menu-items ul {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+}
+.menu .menu-items ul button {
+  background-color: transparent;
+  border: none;
+}
+.menu .menu-list {
+  display: none;
+}
+.menu .menuActive {
+  display: block;
+}
+.menu .dish-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+}
+.menu .dish-details h4, .menu .dish-details .h4, .menu .dish-details .price {
+  font-size: 24px;
+}
+.menu .dish-details p {
+  color: #909193;
+}
+.menu .dish-details .price {
+  font-weight: 700;
+}
+
+@media (max-width: 425px) {
+  .menu-top, .menu-bottom {
+    flex-direction: column;
   }
 }
 

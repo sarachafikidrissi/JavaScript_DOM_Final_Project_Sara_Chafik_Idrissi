@@ -150,3 +150,38 @@ containers.forEach(container => {
 
 
 //* About Video Javascript 
+
+
+
+//*menu
+
+
+let allMenuBtn = document.querySelectorAll(".menuBtn")
+let AllMenuList = document.querySelectorAll(".menu-list")
+let notMenu = []
+console.log(AllMenuList);
+allMenuBtn.forEach(btn => {
+    btn.addEventListener("click", () => {
+        allMenuBtn.forEach(e => {
+            e.classList.remove("active")
+
+        })
+        btn.classList.add("active")
+        let attr = btn.getAttribute("data-target")
+        AllMenuList.forEach(menu => {
+            let menuId = menu.getAttribute("id")
+            if(menuId != attr){
+                if(menu.classList.contains("menuActive")){
+                    menu.classList.remove("menuActive")
+                }
+            }
+            if(menuId == attr){
+                menu.classList.add("menuActive")
+                menu.style.animation = "fadeOut 0.5s ease-in-out"
+            }
+            
+            
+        })
+        
+    })
+})
