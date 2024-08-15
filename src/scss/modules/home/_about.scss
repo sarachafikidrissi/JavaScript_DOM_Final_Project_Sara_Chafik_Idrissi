@@ -1,0 +1,196 @@
+
+.about-section{
+    h2{
+        font-size: 13px;
+    }
+    .heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .heading p{
+        font-family: $heading-font;
+        font-size: 48px;
+    }
+    .about-content{
+        display: flex;
+        gap: 5vw;
+        .left-side{
+            width: 60vw;
+            img{
+                width: 100%
+            }
+            .call-info{
+                border-color: #646668 !important;
+                h3{
+                    font-size: 24px;
+                }
+                p{
+                    font-size: 28px;
+                    font-weight: 600;
+                }
+            }
+            
+        }
+        .right-side{
+            width: 40vw;
+            video{
+                max-width: 100%;
+            }
+        }
+        .about-list li{
+            padding: 0 0 10px 20px;
+            text-indent: -10px;
+            .bi{
+                color: #ce1212;
+                margin-right: 10px;
+            }
+            
+        }
+    }
+    
+}
+// .why-choose-yummy{
+//     background-color: $light-background-color;
+//     .div-1{
+//         width: 30vw;
+//         color: white;
+//         display: flex;
+//         flex-direction: column;
+//         gap: 2vh;
+//         padding: 4vh;
+//         h3{
+//             font-size: 34px;
+//             font-weight: bold;
+//         }
+
+//     }
+//     .div-2 {
+//         width: 20vw;
+//         background-color: white;
+//         display: flex;
+//         flex-direction: column;
+//         gap: 2vh;
+//         align-items: center;
+//         h4{
+//             font-size: 20px;
+//             text-align: center;
+//         }
+//         p{
+//             text-align: center;
+//             color: #6a6b6c;
+//             font-size: 15px;
+
+//         }
+//         .icons{
+//             background-color: #fdf4f4;
+//             color: #ce1212;
+//             width: 80px;
+//             height: 80px;
+//             border-radius: 50px;
+//             position: relative;
+//             i{
+//                 position: absolute;
+//                 top: 50%;
+//                 left: 50%;
+//                 transform: translate(-50%, -50%);
+//                 font-size: 40px;
+//             }
+//         }
+//     }
+//     .div-2:hover  .icons{
+//         background-color: #ce1212;
+//         color: white
+//     }
+//     a{
+//         color: white;
+//         background-color: green;
+//         padding: 1vh 2vw;
+//         border-radius: 20px;
+//         background-color: hsla(0, 76%, 59%, 0.9);
+//     }
+//     a:hover{
+//         background-color: white;
+//         color: #ce1212;
+//     }
+// }
+
+// .stats{
+//     height: 50vh;
+//     background-image: url('../../../../public/images/stats-bg.jpg');
+//     background-repeat: no-repeat;
+//     background-position:  100%;
+//     background-size: cover;
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//     position: relative;
+//     .stats-numbers{
+//         color: white;
+//         font-size: 48px;
+//         font-weight: 700;
+//         z-index: 1;
+//     }
+//     .stats-title{
+//         font-size: 16px;
+//         font-weight: 700;
+//         color: rgb(236, 236, 236);
+//         z-index: 1;
+//     }
+// }
+// .stats:before{
+//     content: "";
+//     position: absolute;
+//     left: 0%;
+//     top: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: rgba(0, 0, 0, 0.5);
+// }
+
+
+@media (max-width: 425px){
+    .about-content{
+        flex-direction: column;
+        align-items: center;
+        .left-side{
+            padding-top: 2vh;
+            width: 100vw !important;
+            display: flex;
+            align-items: center;
+            img{
+                width: 90% !important;
+            }
+            .call-info{
+                width: 90% !important;
+                h3{
+                    font-size: 24px;
+                }
+                p{
+                    font-size: 28px;
+                    font-weight: 600;
+                }
+            }
+            
+        }
+        .right-side{
+            width: 100vw !important;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-inline: 2vw;
+            img{
+                max-width: 90% !important;
+            }
+        }
+        .about-list li{
+            padding: 0 0 10px 20px;
+            text-indent: -10px;
+            .bi{
+                color: #ce1212;
+                margin-right: 10px;
+            }
+            
+        }
+    }
+}

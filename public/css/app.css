@@ -49866,7 +49866,7 @@ textarea.form-control-lg {
     width: 80%;
   }
   .hero-section .hero-section-image {
-    padding-top: 20vh;
+    padding-top: 10vh;
   }
 }
 nav {
@@ -50059,6 +50059,97 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.about-section h2, .about-section .h2 {
+  font-size: 13px;
+}
+.about-section .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-section .heading p {
+  font-family: amantic;
+  font-size: 48px;
+}
+.about-section .about-content {
+  display: flex;
+  gap: 5vw;
+}
+.about-section .about-content .left-side {
+  width: 60vw;
+}
+.about-section .about-content .left-side img {
+  width: 100%;
+}
+.about-section .about-content .left-side .call-info {
+  border-color: #646668 !important;
+}
+.about-section .about-content .left-side .call-info h3, .about-section .about-content .left-side .call-info .h3 {
+  font-size: 24px;
+}
+.about-section .about-content .left-side .call-info p {
+  font-size: 28px;
+  font-weight: 600;
+}
+.about-section .about-content .right-side {
+  width: 40vw;
+}
+.about-section .about-content .right-side video {
+  max-width: 100%;
+}
+.about-section .about-content .about-list li {
+  padding: 0 0 10px 20px;
+  text-indent: -10px;
+}
+.about-section .about-content .about-list li .bi {
+  color: #ce1212;
+  margin-right: 10px;
+}
+
+@media (max-width: 425px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-content .left-side {
+    padding-top: 2vh;
+    width: 100vw !important;
+    display: flex;
+    align-items: center;
+  }
+  .about-content .left-side img {
+    width: 90% !important;
+  }
+  .about-content .left-side .call-info {
+    width: 90% !important;
+  }
+  .about-content .left-side .call-info h3, .about-content .left-side .call-info .h3 {
+    font-size: 24px;
+  }
+  .about-content .left-side .call-info p {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .about-content .right-side {
+    width: 100vw !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 2vw;
+  }
+  .about-content .right-side img {
+    max-width: 90% !important;
+  }
+  .about-content .about-list li {
+    padding: 0 0 10px 20px;
+    text-indent: -10px;
+  }
+  .about-content .about-list li .bi {
+    color: #ce1212;
+    margin-right: 10px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

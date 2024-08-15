@@ -147,3 +147,6 @@ containers.forEach(container => {
     });
     indicatorsGrp.querySelector(".indicator").classList.add('activeIndicator')
 });
+
+
+//* About Video Javascript 
