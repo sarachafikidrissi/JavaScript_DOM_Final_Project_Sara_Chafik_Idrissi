@@ -50171,6 +50171,40 @@ a {
   color: #ce1212;
 }
 
+.stats {
+  height: 50vh;
+  background-image: url("../../../../public/images/stats-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.stats .stats-numbers {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  z-index: 1;
+}
+.stats .stats-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(236, 236, 236);
+  z-index: 1;
+}
+
+.stats:before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 425px) {
   .about-content {
     flex-direction: column;
@@ -50222,6 +50256,10 @@ a {
   }
   .why-choose-yummy .div-2 {
     width: 90vw;
+  }
+  .stats {
+    flex-direction: column;
+    height: 100vh;
   }
 }
 
