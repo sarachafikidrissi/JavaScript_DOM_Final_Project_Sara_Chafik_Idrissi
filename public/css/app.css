@@ -50577,6 +50577,9 @@ li {
   .card {
     width: 90% !important;
   }
+  .card .side {
+    right: 10px;
+  }
 }
 .booking {
   background-color: #f2f2f2;
