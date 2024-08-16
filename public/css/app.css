@@ -50047,6 +50047,52 @@ nav #close {
   a {
     font-weight: bold;
   }
+  .login-input {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-inline: 2vw;
+    padding-top: 1vh;
+  }
+  .login-input .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 100%;
+    align-items: center;
+  }
+  .login-input .inputs .input {
+    padding: 2vh 1vw;
+    width: 80%;
+  }
+  .login-input .signIn {
+    padding: 1vh 3vh;
+    border: none;
+    background-color: #ce1212;
+    color: white;
+    border-radius: 20px;
+  }
+  .login-input span {
+    color: #ce1212;
+  }
+  .login-input .title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  .login-input .title h1, .login-input .title .h1 {
+    font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  .login-input .close {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+  }
 }
 * {
   margin: 0;
