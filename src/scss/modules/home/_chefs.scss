@@ -24,6 +24,9 @@
     .card:hover{
        transform: scale(1.1);
     }
+    .card:hover .side{
+        right: 10px;
+    }
     .card-body{
         display: flex;
         flex-direction: column;
@@ -42,6 +45,16 @@
     .shape{
         position: absolute;
         top: 60%;
+    }
+    .side{
+       padding: 1vw;
+       border-radius: 10px;
+        background-color: white;
+        opacity: 0.5;
+        position: absolute;
+        right:-200px;
+        top: 10px;
+        transition: 0.5s;
     }
 }
 

@@ -26,3 +26,9 @@
         overflow: hidden;
     }
 }
+
+@media (max-width: 425px){
+    .wrapper .carousel{
+        flex-direction: column;
+    }
+}

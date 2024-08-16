@@ -50531,6 +50531,9 @@ li {
 .chefs .card:hover {
   transform: scale(1.1);
 }
+.chefs .card:hover .side {
+  right: 10px;
+}
 .chefs .card-body {
   display: flex;
   flex-direction: column;
@@ -50549,6 +50552,16 @@ li {
 .chefs .shape {
   position: absolute;
   top: 60%;
+}
+.chefs .side {
+  padding: 1vw;
+  border-radius: 10px;
+  background-color: white;
+  opacity: 0.5;
+  position: absolute;
+  right: -200px;
+  top: 10px;
+  transition: 0.5s;
 }
 
 @media (max-width: 425px) {
@@ -50670,6 +50683,12 @@ li {
   gap: 1vw;
   white-space: nowrap;
   overflow: hidden;
+}
+
+@media (max-width: 425px) {
+  .wrapper .carousel {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
