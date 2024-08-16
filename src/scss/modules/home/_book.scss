@@ -48,15 +48,20 @@
 
 @media (max-width: 425px){
     .booking{
-        padding: 2vh 4vw !important;
+        padding: 2vh 5vw !important;
     }
     .content{
         flex-direction: column;
-        width: 100vh;
-        background-color: #ce1212;
-        .top-input{
-            display: flex;
-            flex-direction: column;
+        img{
+            width: 100% !important;
         }
+    }
+    .top-input, .bottom-input{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    input{
+        width: 100% !important;
     }
 }
