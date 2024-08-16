@@ -22,22 +22,63 @@
         border-radius: 50%;
     }
     
-    .carousel{
-        display: flex;
-        justify-content: center; 
-    }
-    .slide{
-        display: flex;
-        gap: 5vw;
-        border-left: 5px solid #ce1212;
-        width: 70%;
-        padding: 2vh 3vw 0;
-        // display: none;
-        min-width: 70%;
-        position: relative;
-        // left: 110%;
-        // overflow: hidden;
-    }
+    
+.carousel-container {
+    width: 80%;
+    height: 30vh;
+    position: relative;
+    overflow: hidden;
+}
+.carousel{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    border-left: 5px solid #ce1212;
+    min-width: 100%;
+    padding: 2vh 3vw 0;
+    
+}
+.next , .previous {
+    padding: 1vh 2vw;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.next{
+    right:0px ;
+}
+.previous{
+    left:0 ;
+}
+.indicators-grp{
+    width: 100%;
+    padding: 2vh 0;
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.indicator{
+    // padding: 0.3vh 1vw;
+    width: 15px;
+    height: 15px;
+    background: $cold-gray;
+    border-radius: 50%;
+}
+.activeIndicator{
+    background-color: #ce1212;
+}
     .stars .bi{
         color: #ffc107;
     }
@@ -51,26 +92,24 @@
     .job{
         color: $cold-gray;
     }
+}
 
-    .active{
-        display: flex;
+@media (max-width: 425px){
+    .testimonials .heading p{
+        text-align: center;
+        padding-inline: 1vw;
+    }
 
-
+    .slide{
+        flex-direction: column !important;
     }
-    .indicators{
-        display: flex;
-        gap: 1vw;
+    .carousel .slide img{
+        width: 300px !important;
+        height: 300px !important;
     }
-    .indicatore{
-        width: 20px;
-        height: 20px;
-        background-color: gray;
-        border-radius: 20px;
+    .carousel-container{
+        height: 100vh !important;
     }
-    .indicatorActive{
-        background-color: #ce1212;
-    }
-    
 }
 
 

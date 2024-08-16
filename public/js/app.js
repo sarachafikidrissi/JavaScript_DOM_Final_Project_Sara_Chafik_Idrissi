@@ -109,7 +109,8 @@ const slideImage = (index, myBtn) => {
 
 //* btn dyal next
 nextBtns.forEach(next => {
-    next.addEventListener("click", (event) => { slideImage(currentIndex + 1, event.target) })
+    next.addEventListener("click", (event) => { slideImage(currentIndex + 1, event.target) 
+    })
 });
 
 //* btn dyal previous
