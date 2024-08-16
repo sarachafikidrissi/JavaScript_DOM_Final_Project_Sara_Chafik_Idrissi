@@ -50533,5 +50533,8 @@ li {
     width: 100% !important;
   }
 }
+.contact p {
+  font-family: amantic;
+}
 
 /*# sourceMappingURL=app.css.map */
