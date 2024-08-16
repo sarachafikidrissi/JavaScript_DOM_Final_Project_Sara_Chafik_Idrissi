@@ -50101,6 +50101,7 @@ nav #close {
 
 body {
   font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  overflow-x: hidden;
 }
 
 a {
@@ -50559,7 +50560,7 @@ li {
   background-color: white;
   opacity: 0.5;
   position: absolute;
-  right: -200px;
+  right: -150px;
   top: 10px;
   transition: 0.5s;
 }
@@ -50689,6 +50690,54 @@ li {
   .wrapper .carousel {
     flex-direction: column;
   }
+}
+.events .carousel-container {
+  width: 40vw;
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
+.events .carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100vw;
+}
+.events .slide img {
+  width: 100%;
+  height: 100%;
+}
+.events .next, .events .previous {
+  padding: 1vh 2vw;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+.events .next {
+  right: 0px;
+}
+.events .previous {
+  left: 0;
+}
+.events .indicators-grp {
+  width: 100%;
+  padding: 2vh 0;
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.events .indicator {
+  width: 15px;
+  height: 15px;
+  background: #909294;
+  border-radius: 50%;
+}
+.events .activeIndicator {
+  background-color: #ce1212;
 }
 
 /*# sourceMappingURL=app.css.map */

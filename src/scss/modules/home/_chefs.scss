@@ -23,6 +23,7 @@
     }
     .card:hover{
        transform: scale(1.1);
+       
     }
     .card:hover .side{
         right: 10px;
@@ -52,9 +53,12 @@
         background-color: white;
         opacity: 0.5;
         position: absolute;
-        right:-200px;
+        right:-150px;
         top: 10px;
         transition: 0.5s;
+        
+        
+
     }
 }
 
