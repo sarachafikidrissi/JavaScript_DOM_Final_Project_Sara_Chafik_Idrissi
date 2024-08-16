@@ -50537,4 +50537,13 @@ li {
   font-family: amantic;
 }
 
+.footer {
+  background-color: #1f1f24;
+  color: white;
+}
+.footer .socials i:hover {
+  cursor: pointer;
+  color: #ce1212;
+}
+
 /*# sourceMappingURL=app.css.map */
