@@ -50643,4 +50643,33 @@ li {
   color: #ce1212;
 }
 
+.gallery {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gallery h2, .gallery .h2 {
+  font-size: 13px;
+}
+.gallery .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery .heading p {
+  font-family: amantic;
+  font-size: 48px;
+}
+.gallery .wrapper {
+  max-width: 1200px;
+}
+.gallery .wrapper .carousel {
+  display: flex;
+  gap: 1vw;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 /*# sourceMappingURL=app.css.map */
